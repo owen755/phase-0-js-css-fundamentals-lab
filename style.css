@@ -1,31 +1,50 @@
 /* Step 4: Style the Navigation Bar */
 .navbar {
-  background-color: #333333;
-  font-size: 18px;
+  background-color: #333;
+  font-size: 1.2em;
   padding: 15px 20px;
   text-align: center; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar ul {
-  list-style-type: none; 
+  list-style: none; 
   margin: 0;
   padding: 0;
 }
 
-.navbar li {
-  display: inline-block;
-  margin: 0 15px;
+.navbar ul li {
+  display: inline;
+  margin: 0 1em;
 }
 
-.navbar a {
-  color: #ffffff;
+.navbar ul li a {
+  color: #fff;
   text-decoration: none; 
 }
 
 /* Step 5: Style the Main Content */
+.main-content {
+  padding-top: 5em;
+}
+
+section {
+  padding: 2em 1em;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 2.5em;
+}
+
+#home p {
+  font-size: 1.2em;
+}
+
 .main-content, .home-section {
-  padding: 40px;
-  text-align: center; 
   font-family: 'Helvetica Neue', Arial, sans-serif; 
   color: #222222; 
   margin: 20px auto; 
@@ -33,7 +52,6 @@
 
 .main-content p, .home-section p {
   line-height: 1.6;
-  font-size: 16px;
   margin-bottom: 15px;
 }
 
@@ -41,35 +59,40 @@
 .portfolio-container {
   display: flex; 
   flex-wrap: wrap; 
-  justify-content: center;
-  gap: 20px;
-  padding: 40px 20px;
+  justify-content: space-around;
+  padding: 1em;
 }
 
 .portfolio-item {
-  background-color: #f9f9f9;
-  border: 1px solid #dddddd;
-  padding: 15px;
-  width: 300px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 1em;
+  padding: 1em;
+  width: 30%;
+  box-sizing: border-box;
   text-align: center;
-  transition: transform 0.3s ease-in-out; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; 
 }
 
 .portfolio-item img {
   max-width: 100%;
   height: auto;
   border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-item h3 {
   font-size: 20px;
   color: #333333;
-  margin: 10px 0;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 .portfolio-item p {
   font-size: 14px;
-  color: #666666;
+  color: #666;
+  margin-bottom: 0.5em;
 }
 
 /* Step 7: Add Hover Effect for Portfolio Items */
@@ -79,9 +102,9 @@
 
 /* Step 8: Style the Footer */
 #footer {
-  background-color: #333333;
-  color: #ffffff;
-  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  padding: 2em;
   text-align: center;
   position: relative; 
   bottom: 0;
